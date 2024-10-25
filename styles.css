@@ -1,0 +1,226 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header grid styling */
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 10px;
+  background-color: #131d26;
+}
+
+/* Gulp logo */
+#gulp-logo-image {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#gulp-logo-image img {
+  width: 150px;
+}
+
+/* Navigation */
+.nav-links-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links-wrapper a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  transition: text-decoration 0.2s ease;
+}
+
+a:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+a:visited {
+  color: #d98555;
+}
+
+/* Main Message Section */
+.home-page-message-wrapper {
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  color: #f2f2f2;
+  font-size: 2.8vw;
+  flex-direction: column;
+}
+
+.home-page-message-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.message-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  width: 90%;
+  padding: 20px;
+  background: rgba(34, 34, 34, 0.551);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.message-container a {
+  text-decoration: none;
+}
+
+.order-online-button {
+  margin-top: 20px;
+  padding: 20px 30px;
+  background-color: transparent;
+  color: #f2f2f2;
+  border: solid 1px black;
+  border-radius: 5px;
+  font-size: 2vw;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+
+hr {
+  border-top: 5px solid #d98555;
+  background: #f2f2f2;
+  border-bottom: 12px solid #131d26;
+  height: 18px;
+  margin: 1.5rem 0;
+}
+
+/*Main page Products and Farmers Market section*/
+.home-page-prod-farm-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 25vh 0 40vh 0;
+}
+
+.product-item,
+.market-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-basis: 40%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+  font-style: normal;
+  text-align: center;
+  padding-bottom: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: text-decoration 0.2s ease;
+}
+
+a {
+  padding-bottom: 12px;
+}
+
+.product-item,
+.market-item,
+.farmers-market-title img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.our-products-title,
+.farmers-market-title {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: auto;
+}
+
+.our-products-title:hover,
+.farmers-market-title:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Footer */
+.footer-wrapper {
+  background-color: #131d26;
+  padding: 20px;
+  text-align: center;
+}
+
+.copywrite,
+.social-media {
+  margin-bottom: 10px;
+  color: #f2f2f2;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #f2f2f2;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  section {
+    padding: 20px;
+    background-position: center;
+  }
+
+  .para-wrapper {
+    width: 90vw;
+  }
+
+  .image-wrapper img {
+    width: 70%;
+  }
+
+  .image-and-caption-wrapper {
+    width: 90vw;
+  }
+
+  .pour-over-caption {
+    width: 23vw;
+  }
+}
